@@ -13,31 +13,15 @@ while answer >= 1961:
     check = data >= answer
     print(check[answer]["title"]) """
 
-genrelist = ["Drama",
-             "Crime",
-             "War",
-             "Comedy",
-             "Fantasy",
-             "Independent",
-             "Noir",
-             "Thriller",
-             "Historical",
-             "Action",
-             "Romance",
-             "Western",
-             "Mystery",
-             "Musical",
-             "Science Fiction",
-             "Disaster",
-             "Political",
-             "Family",
-             "Adventure",
-             "Biography",
-             "Suspense",
-             "Animated"]
-print(genrelist)
-answer = input("what genre do you want to search?")
+
+""" answer = input("what genre do you want to search? capitalize the first letter of your answer")
 for i in range(0, len(data)):
-    if data[i]["genres"] == answer:
+    if answer in data[i]["genres"]:
+        print(data[i]["title"]) """
+
+
+    
+answer = input("what genre do you want to search? capitalize the first letter of your answer")
+for i in range(0, len(data)):
+    if answer in data[i]["year"]:
         print(data[i]["title"])
-        
